@@ -8,7 +8,7 @@ const Form = ({ search, isLoading }) => {
   function Input() {
     return (
       <input
-        className="form__input"
+        className={`form__input ${isLoading ? "form__input_mob-hidden" : ""}`}
         type="text"
         required
         name="input"
@@ -33,7 +33,13 @@ const Form = ({ search, isLoading }) => {
           Ведите ключевое слово
         </label>
         {Input()}
-        <button className="form__submit">Поиск</button>
+        <button
+          className={`form__submit ${
+            isLoading ? "form__submit_mob-hidden" : ""
+          }`}
+        >
+          Поиск
+        </button>
         <div
           className={`form__loader ${isLoading ? "form__loader_active" : ""}`}
         >

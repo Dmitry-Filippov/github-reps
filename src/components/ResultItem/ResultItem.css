@@ -15,9 +15,21 @@
 .result-item__owner {
   font-size: 20px;
   font-weight: 300;
+  padding-top: 4px;
 }
 
 .result-item__lang {
   font-size: 20px;
   font-weight: 400;
+  padding-top: 4px;
+}
+
+@media screen and (max-width: 1020px) {
+  .result-item__name a {
+    font-size: 25px;
+  }
+
+  .result-item__owner, .result-item__lang {
+    font-size: 17px;
+  }
 }
