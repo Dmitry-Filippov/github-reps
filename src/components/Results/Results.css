@@ -1,0 +1,23 @@
+.results {
+  padding-top: 50px;
+}
+
+.results__title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.results__results-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 10px;
+}
+
+.results__all {
+  padding-top: 30px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-align: center;
+}
