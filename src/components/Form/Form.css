@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .form__label {
@@ -39,4 +40,15 @@
   text-align: center;
   border: 1px solid #696969;
   cursor: pointer;
+}
+
+.form__loader {
+  position: absolute;
+  right: -90px;
+  top: -20px;
+  display: none;
+}
+
+.form__loader_active {
+  display: block;
 }
