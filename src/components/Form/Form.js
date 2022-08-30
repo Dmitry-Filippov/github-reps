@@ -17,7 +17,7 @@ const Form = ({ search, isLoading }) => {
           setInputValue(e.target.value);
         }}
       />
-    );
+    ); 
   }
 
   function handleFormSubmit(e) {
@@ -30,7 +30,7 @@ const Form = ({ search, isLoading }) => {
       <h1 className="form__title">Поиск на GitHub</h1>
       <form className="form__form" onSubmit={handleFormSubmit}>
         <label htmlFor="input" className="form__label">
-          Ведите ключевое слово
+          Введите ключевое слово
         </label>
         {Input()}
         <button
